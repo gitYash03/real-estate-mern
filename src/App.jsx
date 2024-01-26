@@ -3,12 +3,14 @@ import Home from "./pages/Home"
 import SignIn from "./pages/SignIn"
 import About from "./pages/About"
 import SignUp from "./pages/SignUp"
-import Profile from "./pages/profile"
+import Profile from "./pages/Profile"
+import Header from "./Components/Header"
 
 const App = () => {
   return (
 
       <BrowseRouter>
+      <Header />
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/sign-in' element={<SignIn />} />
